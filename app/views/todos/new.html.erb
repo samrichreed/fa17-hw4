@@ -1,0 +1,9 @@
+<%= form_for @todo do |f| %>
+  <%= f.label :tasks %>:
+  <%= f.text_field :tasks %><br />
+
+  <%= f.label :finished %>:
+  <%= f.select :finished, [['Finished', true], ['Not finished', false]] %><br />
+
+  <%= f.submit %>
+<% end %>
